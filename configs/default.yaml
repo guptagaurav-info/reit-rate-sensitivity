@@ -1,0 +1,22 @@
+start: "2005-01-07"
+end: "2026-10-30"
+market: SPY
+treasury: TLT
+yield_col: bc_10year
+window_weeks: 104
+cost_bp: 5
+sectors:
+  Net lease: [O, NNN]
+  Residential: [EQR, AVB, ESS, MAA, INVH]
+  Industrial: [PLD]
+  Towers and data centres: [AMT, CCI, EQIX, DLR]
+  Retail: [SPG, KIM, REG, FRT]
+  Office and labs: [BXP, VNO, ARE]
+  Healthcare: [WELL, VTR]
+  Storage: [PSA, EXR]
+  Lodging: [HST]
+sources:
+  daily_treasury_yield.parquet: {url: https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/daily_treasury_yield.parquet, sha256: d01fa8d1b818ad3ba61fe459dcbf317af981b926f513054ba0104328fdce31e0}
+  stock_dividend_events.parquet: {url: https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_dividend_events.parquet, sha256: 9eb8265ac9d21997a8d9a31f7ee8e5099c42ca2508fe36a07929595b378d4b54}
+  stock_prices.parquet: {url: https://huggingface.co/datasets/defeatbeta/yahoo-finance-data/resolve/main/data/US/stock_prices.parquet, sha256: 4c522ec0dee02cb6554b5c3e4929d512327715c8f89670f9b1898b2403912f98}
+downloaded: "2026-11-01"
